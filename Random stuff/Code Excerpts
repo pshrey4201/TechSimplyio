@@ -1,0 +1,6 @@
+Cordova Ios Build :-
+--buildFlag='-UseModernBuildSystem=0'
+ng build = Builds directory
+ng serve = launches http server
+ng new [name] = new angular file
+Ng generate component [name] = new bracket of code created.

@@ -21,6 +21,24 @@ under the License.
 
 // add methods as we determine what are the requirements
 
-module.exports.run = function () {
+/*module.exports.run = function () {
     return Promise.resolve();
+};*/
+
+module.exports.run = function () {
+    var requirements = [new Requirement('browser', 'Browser', true, true)];
+    return Promise.resolve().then(function(){
+        return requirements;
+        //or just return [];
+    });
+};
+
+/*Not need if retun []*/
+var Requirement = function (id, name, version, installed) {
+    this.id = id;
+    this.name = name;
+    this.installed = installed || false;
+    this.metadata = {
+        version: version
+    };
 };
