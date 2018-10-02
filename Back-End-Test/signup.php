@@ -2,6 +2,7 @@
     include_once 'header.php'
 ?>
 <!--This is the sign up page, we are getting the user's input here!  -->
+<!--Change this too Three.js  -->
     <section class="main-container">
         <div class="main-wrapper">
             <h2>signup</h2>
