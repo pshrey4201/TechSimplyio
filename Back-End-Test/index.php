@@ -10,7 +10,7 @@
               }
           ?>
             <h2>Home</h2>
-            <h3>Git test</h3>
+            <h3>Git test this is a test part2!</h3>
         </div>
     </section>
 <?php
