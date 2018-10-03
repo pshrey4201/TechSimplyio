@@ -1,12 +1,20 @@
+ html,body { height: 100%; width: 100%; margin: 0px; padding: 0px; }
 
-.main-wrapper {
-    width:30%;
-		height: 100%;
-		position: absolute;
-		z-index: 0;
-		left:0%;
-
-		background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+.loginContainer{
+  position: absolute;
+  /* display: inline-block; */
+  width: 30%;
+  height: 100%;
+  z-index: 1;
+  left:20%;
+  /* margin: 0; */
+}
+.loginContainer .main-wrapper {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  z-index: inherit;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
@@ -63,7 +71,7 @@
     color: #111;
     line-height: 63px;
 }*/
- .main-wrapper .login{
+ .loginContainer .main-wrapper .login{
 	margin: 50% auto;
 	width: 75%;
 	height: 75%;
@@ -186,12 +194,14 @@
 
 .main-container {
   padding-top: 40px;
+  position: absolute;
+  z-index: 5;
 }
 
 .main-container h2 {
   text-align: center;
   padding-top: 40px;
-  font-family: arial;
+  font-family: 'Roboto';
   font-size: 40px;
   color: #111;
   line-height: 50px;
@@ -200,7 +210,7 @@
 .signup-form {
   width: 400px
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 30px;ßß
 }
 
 .signup-form input {
@@ -234,16 +244,15 @@
 body {
 				text-align:center;
           /*background: #222222;*/
-					line-height:1;
+					/* line-height:1; */
 					background-color: #130f40;
 					background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
 			   	margin: 0px;
-				overflow: hidden;
+				  overflow: hidden;
           font-family: 'Roboto', sans-serif;
 			}
 			canvas{
 				position: absolute;
-
 				right: 0%;
 			}
 .container{

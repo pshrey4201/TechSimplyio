@@ -1,5 +1,5 @@
 <?php
-    include_once 'header.php'
+    include_once 'cleanNavbar.php'
 ?>
 <!--This is the comment  -->
     <section class="main-container">
