@@ -9,12 +9,9 @@ session_start();
         <link rel="stylesheet" type="text/css" href="./Test_pages/clean_external_stylesheet.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
         <script src="./Frameworks/Three-js/three.js-master/build/three.js"></script>
-        <!--<script src="./Frameworks/Three-js/three.js-master/examples/js/controls/OrbitControls.js"></script>-->
-        <!--<script src="./Frameworks/Three-js/three.js-master/examples/js/libs/stats.min.js"></script>
-        <!--This is the link of the external style sheet!-->
     </head>
 <body>
-      <div id="deviceready" style="margin: 0; height: 100%; width: 100%;">
+      <div id="deviceready">
         <div class="loginContainer">
         <div class="main-wrapper card">
             <div class="login">
@@ -46,7 +43,4 @@ session_start();
         </div>
         <div id="container"></div>
         <script src="./js/three.js"></script>
-
       </div>
-    <!--<script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>-->

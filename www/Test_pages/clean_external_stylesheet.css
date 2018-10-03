@@ -6,14 +6,15 @@
   width: 30%;
   height: 100%;
   z-index: 1;
-  left:20%;
-  /* margin: 0; */
+  left:0%;
+  margin: 0;
 }
 .loginContainer .main-wrapper {
+  position: absolute;
   margin: 0;
   width: 100%;
   height: 100%;
-  z-index: inherit;
+  z-index: 1;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
