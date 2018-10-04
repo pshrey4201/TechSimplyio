@@ -1,23 +1,38 @@
  html,body { height: 100%; width: 100%; margin: 0px; padding: 0px; }
-
+#container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 #loginContainer{
   position: absolute;
   /* display: inline-block; */
+  /* display: none; */
   width: 30%;
   height: 100%;
   z-index: 1;
   left:-30%;
   margin: 0;
-  animation: openLogin 1s ease normal forwards;
-  animation-play-state: paused;
+  /* animation: open 1s ease normal forwards; */
+  /* animation-play-state: paused; */
 }
 
-@keyframes openLogin {
+@keyframes open {
     0% {
       left: -30%;
     }
     100% {
       left: 0;
+      display: block;
+    }
+}
+@keyframes close {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -30%;
+      display:none;
     }
 }
 #loginContainer .main-wrapper {
@@ -86,8 +101,13 @@
  #loginContainer .main-wrapper .login{
 	margin: 50% auto;
 	width: 75%;
-	height: 75%;
+	height: 100%;
 
+}
+#loginContainer .main-wrapper #signup {
+  margin: 0;
+  width: 75%;
+  height: 100%;
 }
 .nav-login {
 	position: relative;
@@ -204,25 +224,25 @@
   transition: 0s;
 }
 
-.main-container {
+/* .main-container {
   padding-top: 40px;
   position: absolute;
   z-index: 5;
 }
 
-.main-container h2 {
+/* .main-container h2 {
   text-align: center;
   padding-top: 40px;
   font-family: 'Roboto';
   font-size: 40px;
   color: #111;
   line-height: 50px;
-}
+ } */
 /*Sign up begins here */
 .signup-form {
   width: 400px
-  margin: 0 auto;
-  padding-top: 30px;ßß
+  margin: 0;
+  /* padding-top: 30px; */
 }
 
 .signup-form input {
@@ -267,11 +287,6 @@ body {
 				position: absolute;
 				right: 0%;
 			}
-.container{
-  z-index: -1;
-	position: absolute;
-	/* width: 50%; */
-}
 .card {
     box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
     transition: 0.3s;
@@ -313,6 +328,7 @@ ul {
   width: 100%;
   height: 70px;
   z-index: 2;
+-moz-user-select: none; /* Firefox */
 
 	/*transition: 1s;
 	transition-timing-function: ease-in-out;*/
@@ -329,6 +345,7 @@ ul {
 a{
 	text-decoration: none;
 	color: white;
+    user-select: none;
 }
 li {
     float: left;

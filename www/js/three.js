@@ -13,7 +13,7 @@
 
     function init() {
 
-        container = document.getElementById( 'container' );
+        container = document.getElementById( 'threeJsContainer' );
 
         camera = new THREE.PerspectiveCamera( 25, width / height, 1, 4000 );
         camera.position.z = 550;
@@ -72,7 +72,12 @@
     }
 
     function onWindowResize() {
-      width = window.innerWidth * 0.70 ;
+      if (clickCount == 1) {
+        width = window.innerWidth * 0.70;
+      } else {
+        width = window.innerWidth;
+      };
+
       height = window.innerHeight;
 
         camera.aspect = width / height;
@@ -105,14 +110,22 @@
         camera.updateProjectionMatrix();
         renderer.setSize( width, height );
         clickCount += 1;
+        document.getElementById("loginContainer").style.animation = "open 1s ease normal forwards";
         document.getElementById("loginContainer").style.animationPlayState = "running";
+
+
       } else {
         width = window.innerWidth;
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize( width, height );
         clickCount = 0;
-        document.getElementById("loginContainer").style.animationDirection = "reverse";
+        document.getElementById("loginContainer").style.animation = "close 1s ease normal forwards";
+        document.getElementById("loginContainer").style.animationPlayState = "running";
       }
 
     }
+    $(document).ready(function(){
+      // $("#loginButton").click(function(){
+        $("#container").load("./header.php");
+});

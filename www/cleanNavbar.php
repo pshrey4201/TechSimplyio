@@ -12,14 +12,16 @@ session_start();
 		<!--<link href="Test_pages/font.css" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
     <link rel="stylesheet" text="text/css" href="Test_pages/clean_external_stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./Frameworks/Three-js/three.js-master/build/three.js"></script>
     </head>
     <body>
         <div id="deviceready">
+          <div id="container"></div>
           <div class="navbar">
               <ul>
                 <li><span><a href="#">TechSimply</a></span></li>
-                <li><span><a onclick='changeThreeWidth()'>Login</a></span></li>
+                <li><span><a onclick='changeThreeWidth();'id="loginButton">Login</a></span></li>
                 <li><img src="./Test_pages/gear-transparent-4.png" class="settings"/></li>
                 <li class='search'><span>Search</span></li>
               </ul>
@@ -27,7 +29,7 @@ session_start();
 
                     <div class="card"></div>
 
-            <div id="container"></div>
+            <div id="threeJsContainer"></div>
             <script src="./js/three.js"></script>
 
         </div>
