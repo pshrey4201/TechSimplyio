@@ -1,0 +1,16 @@
+[Wed Oct 03 13:12:41.827813 2018] [ssl:warn] [pid 4727] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Oct 03 13:12:41.828251 2018] [ssl:warn] [pid 4727] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Oct 03 13:12:41.939428 2018] [ssl:warn] [pid 4728] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Wed Oct 03 13:12:41.939479 2018] [ssl:warn] [pid 4728] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Wed Oct 03 13:12:41.939805 2018] [lbmethod_heartbeat:notice] [pid 4728] AH02282: No slotmem from mod_heartmonitor
+[Wed Oct 03 13:12:41.971422 2018] [mpm_prefork:notice] [pid 4728] AH00163: Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Wed Oct 03 13:12:41.971648 2018] [core:notice] [pid 4728] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
+[Wed Oct 03 13:32:35.302192 2018] [authz_core:error] [pid 6235] [client 10.96.5.209:49575] AH01630: client denied by server configuration: /Applications/XAMPP/xamppfiles/phpmyadmin
+[Wed Oct 03 14:48:39.078095 2018] [mpm_prefork:notice] [pid 4728] AH00169: caught SIGTERM, shutting down
+[Thu Oct 04 13:15:12.597244 2018] [ssl:warn] [pid 851] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Oct 04 13:15:12.611892 2018] [ssl:warn] [pid 851] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Oct 04 13:15:12.733478 2018] [ssl:warn] [pid 852] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Thu Oct 04 13:15:12.733537 2018] [ssl:warn] [pid 852] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Oct 04 13:15:12.739858 2018] [lbmethod_heartbeat:notice] [pid 852] AH02282: No slotmem from mod_heartmonitor
+[Thu Oct 04 13:15:12.893989 2018] [mpm_prefork:notice] [pid 852] AH00163: Apache/2.4.34 (Unix) OpenSSL/1.0.2p PHP/7.2.10 mod_perl/2.0.8-dev Perl/v5.16.3 configured -- resuming normal operations
+[Thu Oct 04 13:15:12.894412 2018] [core:notice] [pid 852] AH00094: Command line: '/Applications/XAMPP/xamppfiles/bin/httpd -E /Applications/XAMPP/xamppfiles/logs/error_log -D SSL -D PHP'
