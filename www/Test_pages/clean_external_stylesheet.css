@@ -1,15 +1,26 @@
  html,body { height: 100%; width: 100%; margin: 0px; padding: 0px; }
 
-.loginContainer{
+#loginContainer{
   position: absolute;
   /* display: inline-block; */
   width: 30%;
   height: 100%;
   z-index: 1;
-  left:0%;
+  left:-30%;
   margin: 0;
+  animation: openLogin 1s ease normal forwards;
+  animation-play-state: paused;
 }
-.loginContainer .main-wrapper {
+
+@keyframes openLogin {
+    0% {
+      left: -30%;
+    }
+    100% {
+      left: 0;
+    }
+}
+#loginContainer .main-wrapper {
   position: absolute;
   margin: 0;
   width: 100%;
@@ -72,7 +83,7 @@
     color: #111;
     line-height: 63px;
 }*/
- .loginContainer .main-wrapper .login{
+ #loginContainer .main-wrapper .login{
 	margin: 50% auto;
 	width: 75%;
 	height: 75%;
@@ -119,7 +130,7 @@
 	border-radius: 5px;
   background: rgba(255, 255, 255, 0);
   font-family: 'Roboto';
-  font-size: 36px;
+  font-size: 24px;
 	text-align: center;
 	line-height: 1px;
   color: #ffffff;
@@ -143,7 +154,7 @@
     border: none;
     background: rgba(255, 255, 255, 0);
     font-family: 'Roboto';
-    font-size: 36px;
+    font-size: 24px;
     color: #ffffff;
 		text-align: center;
 		border-radius: 5px;

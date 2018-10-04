@@ -105,12 +105,14 @@
         camera.updateProjectionMatrix();
         renderer.setSize( width, height );
         clickCount += 1;
+        document.getElementById("loginContainer").style.animationPlayState = "running";
       } else {
         width = window.innerWidth;
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize( width, height );
         clickCount = 0;
+        document.getElementById("loginContainer").style.animationDirection = "reverse";
       }
 
     }

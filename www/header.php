@@ -12,7 +12,7 @@ session_start();
     </head>
 <body>
       <div id="deviceready">
-        <div class="loginContainer">
+        <div id="loginContainer">
         <div class="main-wrapper card">
             <div class="login">
               <?php
@@ -36,7 +36,7 @@ session_start();
         <div class="navbar">
             <ul>
               <li><span><a href="cleanNavbar.php">TechSimply</a></span></li>
-              <li><span>Login</span></li>
+              <li><span><a onclick='changeThreeWidth()'>Login</span></a></li>
               <li><img src="./Test_pages/gear-transparent-4.png" class="settings"/></li>
               <li class='search'><span>Search</span></li>
             </ul>
