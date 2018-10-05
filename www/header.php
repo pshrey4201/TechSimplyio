@@ -21,8 +21,9 @@ session_start();
                         <span><input type="text" name="uid" placeholder="Username/e-mail"></span>
                         <span><input type="password" name="pwd" placeholder="password"></span>
                         <button type="submit" name="submit">Login</button>
-                    </form>
-                    <button type="button" id="signUpButton">Sign up</button>';
+                        <button type="button" id="signUpButton">Sign up</button>
+                    </form>';
+
                   }
               ?>
 
