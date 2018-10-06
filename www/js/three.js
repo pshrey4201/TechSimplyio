@@ -28,7 +28,7 @@
 
         var starMaterial = new THREE.PointsMaterial( {
             color: 0xFFFFFF,
-            size: 5,
+            size: 1,
             blending: THREE.AdditiveBlending,
             transparent: false,
             sizeAttenuation: true
@@ -88,8 +88,8 @@
 
     function animate() {
 
-        group.rotation.y += .001;
-        group.rotation.x -= .001;
+        group.rotation.y += .0001;
+        group.rotation.x -= .0001;
         //group.rotation.z += .001;
 
         requestAnimationFrame( animate );
