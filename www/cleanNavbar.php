@@ -17,7 +17,9 @@ session_start();
     </head>
     <body>
         <div id="deviceready">
-          <div id="container"></div>
+          <div id="container"><div id="loginContainer">
+          <div id="background-wrapper" class="main-wrapper card">  </div>
+        </div></div>
           <div class="navbar">
               <ul>
                 <li><span><a href="#">TechSimply</a></span></li>

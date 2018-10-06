@@ -159,12 +159,12 @@
   height: 50px;
   padding: 15px 15px 15px 15px;
   margin-left: 25%;
-  border: .25px solid white;
+  border: 1px solid #FFFFFF;
 	border-radius: 5px;
   background-color: rgba(255, 255, 255, 0);
   font-family: 'Roboto';
   font-size: 36px;
-  color: #ffffff;
+  color: #FFFFFF;
 	text-align: center;
   /* line-height: 30px; */
 }
@@ -173,14 +173,14 @@
   width: 50%;
   height: 60px;
   margin-left: 35%;
-  border: .25px solid white;
+  border: 1px solid white;
 	border-radius: 5px;
   background: rgba(255, 255, 255, 0);
   font-family: 'Roboto';
   font-size: 24px;
 	text-align: center;
 	line-height: 1px;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
 	padding: 15px 15px 15px 15px;
 	transition: background 1s ease-in-out;
@@ -275,7 +275,7 @@
  height: 45px;
  padding: 15px 15px 15px 15px;
  margin-left: 25%;
- border: .25px solid white;
+ border: 1px solid white;
  border-radius: 5px;
  background-color: rgba(255, 255, 255, 0);
  font-family: 'Roboto';
@@ -289,7 +289,7 @@
  width: 50%;
  height: 60px;
  margin-left: 35%;
- border: .25px solid white;
+ border: 1px solid white;
  border-radius: 5px;
  background: rgba(255, 255, 255, 0);
  font-family: 'Roboto';
@@ -306,10 +306,15 @@
    /* transition: background-color 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
 #signup a{
-  margin: 0px auto;
+  position: absolute;
+  top: 20px;
+  /* margin: auto; */
   /* width: 50%; */
   left: 0%;
-  /* margin-left: 35%; */
+  margin-left: 15%;
+  margin-bottom: 35%;
+  margin-top: -15%;
+  margin-right: 0;
   /* border: .25px solid white; */
   /* border-radius: 5px; */
   background: rgba(255, 255, 255, 0);
@@ -319,7 +324,7 @@
   /* line-height: 1px; */
   color: #ffffff;
   cursor: pointer;
-  padding: 15px 15px 15px 15px;
+  /* padding: 15px 15px 15px 15px; */
   text-decoration: none;
   /* color: white; */
     user-select: none;
@@ -331,13 +336,13 @@
   margin: 0;
   /* padding-top: 30px; */
 }
-#signup span {
+#signup form span {
   position: relative;
   display: block;
   cursor: pointer;
 }
 
-#signup span:before, span:after {
+#signup form span:before, span:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -348,22 +353,22 @@
   background: #fff;
 }
 
-#signup span:before {
+#signup form span:before {
   left: -2.5px;
 }
-#signup span:after {
+#signup form span:after {
   right: -17.5%;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-#signup span:hover:before {
+#signup form span:hover:before {
   background: #fff;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-#signup span:hover:after {
+#signup form span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
@@ -439,6 +444,7 @@ ul {
     overflow: hidden;
     color: white;
     font-size: 32px;
+    z-index: 5;
 	/*	transition: 1s;
 		transition-timing-function: ease-in-out;*/
 

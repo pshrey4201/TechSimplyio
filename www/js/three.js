@@ -127,7 +127,7 @@
     }
     $(document).ready(function(){
       // $("#loginButton").click(function(){
-        $("#container").load("./header.php");
+        $("#background-wrapper").load("./header.php");
         // $("a").click(function(){
           // $("#background-wrapper").load("header.php");
         // });

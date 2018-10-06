@@ -8,8 +8,7 @@ session_start();
         });
         });
         </script>
-        <div id="loginContainer">
-        <div id="background-wrapper" class="main-wrapper card">
+
             <div id="login" class="login">
               <?php
                   if (isset($_SESSION['u_id'])) {
@@ -27,6 +26,5 @@ session_start();
                   }
               ?>
 
-            </div>
-        </div>
+
       </div>

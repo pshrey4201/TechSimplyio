@@ -14,7 +14,7 @@ $("a").click(function(){
         <!-- <div class="main-wrapper card"> -->
           <!-- <div id="login" class="login"> -->
             <div id="signup">
-            <span><a>Back</a></span>
+                <div><span><a>Back</a></span></div>
             <form action="includes/signup.inc.php" method="POST">
                 <span><input type="text" name="first" placeholder="Firstname"></span>
                 <span><input type="text" name="last" placeholder="Lastname"></span>
