@@ -3,8 +3,8 @@
     var camera, scene, renderer;
     var starCount = 1000;
     var group;
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    var width = $( window ).width();
+    var height = $( window ).height();
     var clickCount = 0;
 
     init();
@@ -73,12 +73,12 @@
 
     function onWindowResize() {
       if (clickCount == 1) {
-        width = window.innerWidth * 0.70;
+        width = $( window ).width() * 0.70;
       } else {
-        width = window.innerWidth;
+        width = $( window ).width();
       };
 
-      height = window.innerHeight;
+      height =  $( window ).height();
 
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
@@ -105,7 +105,7 @@
     }
     function changeThreeWidth() {
       if (clickCount == 0) {
-        width = window.innerWidth * 0.70;
+        width =  $( window ).width() * 0.70;
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize( width, height );
@@ -115,7 +115,7 @@
 
 
       } else {
-        width = window.innerWidth;
+        width = $( window ).width();
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize( width, height );
