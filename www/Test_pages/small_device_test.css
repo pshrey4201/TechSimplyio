@@ -1,0 +1,96 @@
+body{
+  background-image:  linear-gradient(-45deg, #1C1C1C 10%, #494949 360%);
+  background-image: -webkit-linear-gradient(-45deg, #1C1C1C 10%, #494949 360%);
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+#container{
+  width: 100vw;
+  height: 95vw;
+  position: fixed;
+  top: 0vh;
+
+}
+#tab{
+  position: fixed;
+  width: 100vw;
+  height: 5vh;
+  /* float:left; */
+  bottom: 0vh;
+  left: 0vw;
+  margin: 0;
+  /* margin-bottom: 10%; */
+ font-family: 'Roboto';
+  /* font-size: 0vw; */
+  background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  background: -webkit-linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  border-top-right-radius:  5vw;
+  border-top-left-radius:  5vw;
+  border-bottom-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+  /* padding: 2.5%; */
+  padding-top: 5vw;
+  padding-bottom: 2.5vw;
+  text-align: center;
+  /* padding: 15px 0px 0px 15px; */
+}
+#tab a{
+  margin: 0;
+  /* float:left; */
+  background-color: rgba(255, 0, 0, 0);
+   font-family: 'Roboto';
+   font-size: 4.75vw;
+   color: white;
+   padding: 0;
+   padding-right: 2.5vw;
+   padding-left: 2.5vw;
+   /* padding-right: 0; */
+   /* padding: 1.5%; */
+  /* padding: 5px; */
+  /* padding-left: 10px; */
+  border: none;
+  outline: none;
+  /* border-radius: 5px; */
+}
+@keyframes changeAnimation {
+  from {background-color: rgba(255,255,255,0);}
+  to {background-color: rgba(255,255,255,1);}
+}
+
+span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}

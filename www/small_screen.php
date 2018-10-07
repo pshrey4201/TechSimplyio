@@ -11,8 +11,5 @@
       <li class='search'><span><a href="./cleanNavbar.php">Home</a></span></li>
     </ul>
 </div>
-
-          <div class="card"></div>
-
   <div id="threeJsContainer"></div>
   <script src="./js/small_screen.js"></script>
