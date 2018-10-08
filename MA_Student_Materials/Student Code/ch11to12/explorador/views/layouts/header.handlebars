@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap-theme.css">
+  <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap-image-gallery.min.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css">
+  <link rel="stylesheet" href="/stylesheets/esri/MarkerCluster.css">
+  <link rel="stylesheet" href="/stylesheets/esri/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="/metro-vibes/metro-vibes-css/style.css">
+  <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+  <script src="js/leaflet/leaflet.markercluster.js"></script>
+  <script src="js/leaflet/esri-leaflet.js"></script>
+  <script src="js/leaflet/extras/clustered-feature-layer.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/bootstrap-image-gallery.min.js"></script>
+
+  <style>
+    p{
+      font-size :15px;
+    }
+    #text{
+      position :relative;
+      left :20px;
+      color: 777777;
+    }
+    #top {
+      background-color: #56B156;
+    }
+    .containr-class{
+      background-color: #9acd32;
+    }
+    #content.snap-content{
+      padding-top:70px;
+    } 
+    span, span:hover {
+      color: #FFFFFF;
+    }
+  </style>
+
+  <title>Explorador</title>
+</head>
+<body onload="initSnapJS()">
+  <div style="width:100%" class="topMenu">
+    <div class="row">
+      <div id="topmenu">
+        <ul id="top" style="z-index:10" class="dropdown clearfix boxed">
+          <li>
+            <a href="#" id="open-left">
+              <img src="images/icons/whiteMenu.png" style="vertical-align:middle"></img>
+              <span style="left=16px">Explorador</span>
+            </a>
+          </li>
+          <li class="pull-right">
+            <a href="#">
+              <span id="listView">Map</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      {{> menu menuContext}}
+    </div>
+  </div>
+  {{{body}}}
+</body>
+</html>

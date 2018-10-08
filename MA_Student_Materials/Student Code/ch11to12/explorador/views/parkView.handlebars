@@ -1,0 +1,94 @@
+<div id='content' class='snap-content' onload='loadMap();'>
+  <div class='jumbotron'>
+    <div class='row col-sm-12'>
+      <br>
+      <div class='col-sm-4'>
+        <div class='widget-container widget_gallery boxed'>
+          <div class='inner'>
+            <div class='carousel slide'>
+              <div class='carousel-inner'>
+                <div class='active item'>
+                  <a href='/parkView?id={{id}}'>
+                    <img id='1' src='http://maps.googleapis.com/maps/api/staticmap?center={{park.location.latitude}},{{park.location.longitude}}&zoom=16&size=640x220&maptype=satellite&sensor=false' alt='{{park.name}}'>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-8'>
+        <div class='tabs_framed styled'>
+          <div class='tab-content boxed clearfix'>
+            <div class='tab-pane fade in active'>
+              <div class='inner clearfix'>
+                <div class='tab-text'>
+                  <h3>{{park.name}}</h3>
+                  {{#each park.featTypes}}
+                    {{#ifEqual this 'RUNNING TRACK'}}
+                      <img src='images/icons/RUNNING TRACK' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'SOCCER'}}
+                      <img src='images/icons/soccerSvg.jpg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'BASKETBALL HOOP'}}
+                      <img src='images/icons/basketball.jpg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'TENNIS'}}
+                      <img src='images/icons/tennis.jpg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'VOLLEYBALL'}}
+                      <img src='images/icons/Volleyball.svg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'BASEBALL'}}
+                      <img src='images/icons/Baseball_pictogram.svg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'BASKETBALL COURT'}}
+                      <img src='images/icons/basketball.jpg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'BOAT LAUNCH SMALL'}}
+                      <img src='images/icons/boat.svg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'BOAT LAUNCH'}}
+                      <img src='images/icons/boat.svg' height='50' width='50'>
+                    {{/ifEqual}}
+                    {{#ifEqual this 'CRICKET'}}
+                      <img src='images/icons/Cricket.png' height='50' width='50'>
+                    {{/ifEqual}}
+                  {{/each}}
+                  <p>
+                    Address: {{park.location.address}}
+                    <br>
+                    Features: {{formatFeatTypes park.featTypes}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-sm-8'>
+        <div class='tabs_framed styled' style='margin: 0 auto;'>
+          <div class='tab-content boxed clearfix'>
+            <div class='tab-pane fade in active'>
+              <div class='inner clearfix'>
+                <div class='tab-text'>
+                  <div id='map' style='height: 400px'>
+                  </div>
+                  <div id='parkResults' class='hidden'>
+                    [{{stringify park}}]
+                  </div>
+                  <script type="text/javascript">
+                    loadMap();
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

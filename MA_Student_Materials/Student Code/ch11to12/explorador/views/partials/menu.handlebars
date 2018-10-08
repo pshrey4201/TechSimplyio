@@ -1,0 +1,41 @@
+<link rel='stylesheet' href='stylesheets/snap.css'>
+<script src='js/snap.min.js'></script>
+
+<div class='snap-drawers' onload='initSnapJS()'>
+  <div class='snap-drawer snap-drawer-left'>
+    <div id='snap-menu'>
+      <div id='menu0' name='mainMenu'>
+        <h3>Explorador</h3>
+        <div id='searchForm'>
+          <input id='search' type='search' placeholder='Search'>
+        </div>
+        <h4>Regions</h4>
+        <ul>
+          <li>
+            <label>All Regions</label>
+            <input type='checkbox' name='regions' value='all' checked>
+          </li>
+          {{#each regions}}
+          <li>
+            <label>{{this}}</label>
+            <input type='checkbox' name='regions' value='{{@index}}' checked>
+          </li>
+          {{/each}}
+        </ul>
+        <h4>Categories</h4>
+        <ul>
+          <li>
+            <label>All Categories</label>
+            <input type='checkbox' name='clusters' value='all' checked>
+          </li>
+          {{#each categories}}
+          <li>
+            <label>{{this}}</label>
+            <input type='checkbox' name='cluster' value={{addOne @index}} checked>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

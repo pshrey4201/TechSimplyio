@@ -1,0 +1,36 @@
+{
+  "name": "ParkFiner",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/mightyhops/parkfinder"
+  },
+  "keywords": [
+    "SMU",
+    "HRM",
+    "node",
+    "kit"
+  ],
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://bitbucket.org/mightyhops/parkfinder"
+  },
+  "dependencies": {
+    "socket.io": "*",
+    "jade": "*",
+    "serve-favicon": "*",
+    "stylus": "*",
+    "method-override": "*",
+    "mongodb": "*",
+    "morgan": "*",
+    "express": "*",
+    "express3-handlebars": "*",
+    "errorhandler": "*"
+  }
+}

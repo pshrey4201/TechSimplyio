@@ -1,0 +1,43 @@
+<div id='content' class='snap-content'>
+  <div class='jumbotron'>
+    {{#each parks}}
+    <div class='row col-sm-12'>
+      <br>
+      <div class='col-sm-4'>
+        <div class='widget-container widget_gallery boxed'>
+          <div class='inner'>
+            <div class='carousel slide'>
+              <div class='carousel-inner'>
+                <div class='active item'>
+                  <a href='/parkView?id={{_id}}'>
+                    <img id='1' src='http://maps.googleapis.com/maps/api/staticmap?center={{location.latitude}},{{location.longitude}}&zoom=16&size=640x220&maptype=satellite&sensor=false' alt='{{name}}'>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col-sm-8'>
+        <div class='tabs_framed styled'>
+          <div class='tab-content boxed clearfix'>
+            <div class='tab-pane fade in active'></div>
+            <div class='inner clearfix'>
+              <div class='tab-text'>
+                <h3>{{name}}</h3>
+                <p>
+                  {{location.address}}
+                  <br>
+                  Features : {{formatFeatTypes featTypes}}
+                  <br>
+                  Distance : {{distance}} km
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
