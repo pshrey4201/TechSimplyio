@@ -12,6 +12,12 @@ function setup() {
 function setUnits(unit) {
   var label = document.getElementById("label");
   label.innerHTML = " " + unit;
+  var units = document.getElementById("units");
+  if (unit === "L") {
+    units.innerHTML = "Liters";
+  }else{
+    units.innerHTML = "Gallons";
+  }
 }
 
 function convert() {
