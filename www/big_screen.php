@@ -10,6 +10,6 @@
     </ul>
 </div>
 <!-- <div class="card"></div> -->
-
+  <img id="planet" src="./img/planet.png"></img>
   <div id="threeJsContainer"></div>
   <script src="./js/three.js"></script>

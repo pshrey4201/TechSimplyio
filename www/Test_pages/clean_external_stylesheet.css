@@ -1,8 +1,11 @@
  html,body { height: 100%; width: 100%; margin: 0px; padding: 0px; }
  body{
-   background-image: url(../img/background.png);
-   background-repeat: no-repeat;
-   background-size: 100% 100%;	text-align:center;
+   background-color: #000000;
+ /* background-image: linear-gradient(315deg, #000000 0%, #0e0b30 74%); */
+   /* background-image: url(../img/background.png); */
+   /* background-repeat: no-repeat; */
+   /* background-size: 100% 100%;	 */
+   text-align:center;
        line-height:1;
        /* background-color: #130f40; */
        /* background-image: linear-gradient(315deg, #130f40 0%, #000000 74%); */
@@ -428,4 +431,13 @@ span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
+}
+#planet{
+  position: absolute;
+  bottom: -1%;
+  right: -2.5%;
+  z-index: 1;
+  width: 700px;
+  height: 700px;
+  filter: brightness(75%);
 }
