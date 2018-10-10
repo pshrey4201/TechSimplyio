@@ -4,6 +4,7 @@ body{
   overflow: hidden;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
+  -moz-user-select: none;
 }
 #container{
   width: 100vw;
@@ -20,18 +21,20 @@ body{
   bottom: 0vh;
   left: 0vw;
   margin: 0;
+  padding-left: 5vw;
   /* margin-bottom: 10%; */
  font-family: 'Roboto';
+ font-size: 4.75vw;
   /* font-size: 0vw; */
   background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
   background: -webkit-linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
-  border-top-right-radius:  5vw;
+  border-top-right-radius:  10vw;
   border-top-left-radius:  5vw;
   border-bottom-left-radius: 0vw;
   border-bottom-right-radius: 0vw;
   /* padding: 2.5%; */
-  padding-top: 5vw;
-  padding-bottom: 2.5vw;
+  padding-top: 2.5vh;
+  padding-bottom: 0.5vh;
   text-align: center;
   /* padding: 15px 0px 0px 15px; */
 }
@@ -39,10 +42,11 @@ body{
   margin: 0;
   /* float:left; */
   background-color: rgba(255, 0, 0, 0);
-   font-family: 'Roboto';
-   font-size: 4.75vw;
+   /* font-family: 'Roboto'; */
+
    color: white;
-   padding: 0;
+   /* padding-top: 5vh; */
+   /* padding-bottom: 5vh; */
    padding-right: 2.5vw;
    padding-left: 2.5vw;
    /* padding-right: 0; */
@@ -54,10 +58,47 @@ body{
   /* border-radius: 5px; */
 }
 @keyframes changeAnimation {
-  from {background-color: rgba(255,255,255,0);}
-  to {background-color: rgba(255,255,255,1);}
+  from {bottom: 0vh;}
+  to {bottom: 5vh; }
 }
+@@keyframes closeAnimation {
+  from {bottom: 5vh;}
+  to {bottom: 0vh;}
+}
+#tab ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    /* font-size: 32px; */
+    z-index: 5;
+}
+#tab ul li {
+  /* position: relative; */
+    float: left;
+    /* margin: 0; */
+    /* padding: 0; */
+    margin: 0;
+    /* background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
+    /* background: -webkit-linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
+    /* float:left; */
+    /* background-color: rgba(255, 0, 0, 0); */
+     /* font-family: 'Roboto'; */
 
+     color: white;
+     /* padding-top: 5vh; */
+     /* padding-bottom: 5vh; */
+     padding-right: 2.5vw;
+     padding-left: 2.5vw;
+     /* padding-right: 0; */
+     /* padding: 1.5%; */
+    /* padding: 5px; */
+    /* padding-left: 10px; */
+    border: none;
+    outline: none;
+    /* border-radius: 5px; */
+}
 span {
   position: relative;
   display: block;
@@ -70,15 +111,15 @@ span:before, span:after {
   width: 0%;
   height: 1px;
   bottom: 0%;
-  margin-top: -0.5px;
+  margin-top: -0.5vh;
   background: #fff;
 }
 
 span:before {
-  left: -2.5px;
+  left: 0vw;
 }
 span:after {
-  right: 2.5px;
+  right: 3vw;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
@@ -93,4 +134,310 @@ span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
+}
+#loginContainer{
+  position: fixed;
+  width: 100vw;
+  height: 95vh;
+  z-index: 1;
+  left:0vw;
+  margin: 0;
+}
+
+@keyframes open {
+    0% {
+      left: -30%;
+    }
+    100% {
+      left: 0;
+      display: block;
+    }
+}
+@keyframes close {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -30%;
+      display:none;
+    }
+}
+#loginContainer .main-wrapper {
+  position: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+	background: linear-gradient(-125deg,#FF6A6A, #DB9370, #6E7B8B, #CD5C5C, #B768A2,#739AC5);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 8s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 100%
+	}
+	25% {
+		background-position: 100% 100%;
+	}
+  50%{
+    filter:hue-rotate(360deg);
+
+  }
+	75% {
+	   background-position: 100% 100%;
+	}
+  100%{
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes Gradient {
+  0% {
+		background-position: 0% 100%
+	}
+	25% {
+		background-position: 100% 100%;
+	}
+  50%{
+    background-position: 50%, 50%;
+
+  }
+	75% {
+	   background-position: 100% 100%;
+	}
+  100%{
+    background-position: 0% 100%;
+  }
+}
+ #loginContainer .main-wrapper .login{
+	margin: 50% auto;
+	width: 75vw;
+	height: 95vh;
+  z-index: 5;
+}
+#loginContainer .main-wrapper #signup {
+  margin: 25% 0;
+  width: 75vw;
+  height: 95vh;
+}
+
+ .login form {
+	 width:inherit;
+	 height:inherit;
+}
+
+
+ .login form input {
+	margin: 2vw auto;
+  width: 75vw;
+  height: 5vh;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  /* margin-left: 25%; */
+  border: 1px solid #FFFFFF;
+	border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Roboto';
+  font-size: 5vw;
+  color: #FFFFFF;
+	text-align: center;
+}
+ .login form button {
+  margin: 3vh 0 ;
+  width: 25vw;
+  height: 6vh;
+  margin-left: 25vw;
+  border: 1px solid white;
+	border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  font-family: 'Roboto';
+  font-size: 5vw;
+	text-align: center;
+	line-height: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+	padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+	transition: background 1s ease-in-out;
+}
+.login form button:hover{
+		background: linear-gradient(#ffc3a0 0%, #ffafbd 100%);
+}
+ /* .login a {
+    display: block;
+		margin: 20px auto;
+		padding: 15px 15px 15px 15px;
+    width: 50%;
+    height: 60px;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #ffffff;
+		text-align: center;
+		border-radius: 5px;
+    cursor: pointer;
+		transition: background 1s ease-in-out;
+}
+.login a:hover{
+		background: linear-gradient(#ffc3a0 0%, #ffafbd 100%);
+} */
+.login form span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.login form span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0%;
+  margin-top: -0.5px;
+	margin-left: 1.5vw;
+  background: #fff;
+}
+
+.login form span:before {
+  left: 0vw;
+}
+.login form span:after {
+  right: -1.5vw;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.login form span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.login form span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+#signup form input {
+ margin: 2vh 0;
+ width: 75vw;
+ height: 4.5vh;
+ padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+ margin-left: 10vw;
+ border: 1px solid white;
+ border-radius: 5px;
+ background-color: rgba(255, 255, 255, 0);
+ font-family: 'Roboto';
+ font-size: 5vw;
+ color: #ffffff;
+ text-align: center;
+}
+#signup form button {
+ margin: 2vh 0;
+ width: 50vw;
+ height: 6vh;
+ margin-left: 25vw;
+ border: 1px solid white;
+ border-radius: 5px;
+ background: rgba(255, 255, 255, 0);
+ font-family: 'Roboto';
+ font-size: 5vw;
+ text-align: center;
+ line-height: 1px;
+ color: #ffffff;
+ cursor: pointer;
+ padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+ transition: background 1s ease-in-out;
+}
+#signup form button:hover{
+   background: linear-gradient(#ffc3a0 0%, #ffafbd 100%);
+}
+#signup a{
+  position: fixed;
+  top: 5vh;
+  left: 0%;
+  margin-left: 15vw;
+  margin-bottom: 3.5vh;
+  margin-top: -1.5vh;
+  margin-right: 0;
+  background: rgba(255, 255, 255, 0);
+  font-family: 'Roboto';
+  font-size: 7vw;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+    user-select: none;
+}
+.signup-form {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+}
+#signup form span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+#signup form span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0%;
+  margin-top: -0.5px;
+	margin-left: 17.5%;
+  background: #fff;
+}
+
+#signup form span:before {
+  left: -2.5px;
+}
+#signup form span:after {
+  right: -17.5%;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#signup form span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#signup form span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+canvas{
+  position: absolute;
+  right: 0%;
+  z-index: 50;
+}
+#text{
+  position: absolute;
+  top: 37.5vh;
+  left: 36.5vw;
+  z-index: 100;
+  font-family: 'Roboto';
+  font-size: 10vw;
+  color: white;
+
 }
