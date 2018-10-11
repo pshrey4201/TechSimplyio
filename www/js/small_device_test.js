@@ -1,10 +1,10 @@
 $(document).ready(function(){
-  $("#container").load("./home.php");
+  $("#container").load("../home.php");
 });
   var clickCount = 0;
     var oldX;
 function changeTab(x){
-    var url = "./"+x+".php";
+    var url = "../"+x+".php";
     $("#container").load(url);
 
   // if (clickCount === 0 ){

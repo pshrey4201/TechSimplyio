@@ -12,7 +12,8 @@ session_start();
 		<!--<link href="Test_pages/font.css" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
     <link rel="stylesheet" media="screen and (min-width: 1920px)" text="text/css" href="Test_pages/clean_external_stylesheet.css">
-    <link rel="stylesheet" media="screen and (max-width: 1000px)" text="text/css" href="Test_pages/small_device_test.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px) and (max-width: 1900px;)" text="text/css" href="Test_pages/medium_device.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" text="text/css" href="Test_pages/small_device_test.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./Frameworks/Three-js/three.js-master/build/three.js"></script>
     </head>
