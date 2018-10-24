@@ -1,9 +1,9 @@
 /*!
-* jQuery Mobile 1.4.5
-* Git HEAD hash: 68e55e78b292634d3991c795f06f5e37a512decc <> Date: Fri Oct 31 2014 17:33:30 UTC
+* jQuery Mobile 1.5.0-pre
+* Git HEAD hash: d04308f591d4d0e58443d6a645d0cc1f599888d2 <> Date: Thu Jun 18 2015 17:52:18 UTC
 * http://jquerymobile.com
 *
-* Copyright 2010, 2014 jQuery Foundation, Inc. and othercontributors
+* Copyright 2010, 2015 jQuery Foundation, Inc. and other contributors
 * Released under the MIT license.
 * http://jquery.org/license
 *
@@ -59,16 +59,16 @@
 .ui-icon-camera:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M12%2C2.5H9.908c-0.206-0.581-0.756-1-1.408-1h-3c-0.652%2C0-1.202%2C0.419-1.408%2C1H2c-1.104%2C0-2%2C0.896-2%2C2%20v6c0%2C1.104%2C0.896%2C2%2C2%2C2h10c1.104%2C0%2C2-0.896%2C2-2v-6C14%2C3.396%2C13.104%2C2.5%2C12%2C2.5z%20M7%2C10.5c-1.657%2C0-3-1.344-3-3c0-1.657%2C1.343-3%2C3-3%20s3%2C1.343%2C3%2C3C10%2C9.156%2C8.657%2C10.5%2C7%2C10.5z%20M7%2C5.5c-1.104%2C0-2%2C0.896-2%2C2c0%2C1.104%2C0.896%2C2%2C2%2C2c1.104%2C0%2C2-0.896%2C2-2%20C9%2C6.396%2C8.104%2C5.5%2C7%2C5.5z%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-icon-carat-d:after {
+.ui-icon-caret-d:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%2211.949%2C3.404%207%2C8.354%202.05%2C3.404%20-0.071%2C5.525%207%2C12.596%2014.07%2C5.525%20%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-icon-carat-l:after {
+.ui-icon-caret-l:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%2210.596%2C11.949%205.646%2C7%2010.596%2C2.05%208.475%2C-0.071%201.404%2C7%208.475%2C14.07%20%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-icon-carat-r:after {
+.ui-icon-caret-r:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%223.404%2C2.051%208.354%2C7%203.404%2C11.95%205.525%2C14.07%2012.596%2C7%205.525%2C-0.071%20%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-icon-carat-u:after {
+.ui-icon-caret-u:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%222.051%2C10.596%207%2C5.646%2011.95%2C10.596%2014.07%2C8.475%207%2C1.404%20-0.071%2C8.475%20%22%2F%3E%3C%2Fsvg%3E");
 }
 .ui-icon-check:after,
@@ -228,20 +228,20 @@ html .ui-btn.ui-checkbox-on.ui-checkbox-on:after {
 .ui-alt-icon .ui-icon-camera:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20d%3D%22M12%2C2.5H9.908c-0.206-0.581-0.756-1-1.408-1h-3c-0.652%2C0-1.202%2C0.419-1.408%2C1H2c-1.104%2C0-2%2C0.896-2%2C2v6c0%2C1.104%2C0.896%2C2%2C2%2C2%20h10c1.104%2C0%2C2-0.896%2C2-2v-6C14%2C3.396%2C13.104%2C2.5%2C12%2C2.5z%20M7%2C10.5c-1.657%2C0-3-1.344-3-3c0-1.657%2C1.343-3%2C3-3s3%2C1.343%2C3%2C3%20C10%2C9.156%2C8.657%2C10.5%2C7%2C10.5z%20M7%2C5.5c-1.104%2C0-2%2C0.896-2%2C2c0%2C1.104%2C0.896%2C2%2C2%2C2c1.104%2C0%2C2-0.896%2C2-2C9%2C6.396%2C8.104%2C5.5%2C7%2C5.5z%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-alt-icon.ui-icon-carat-d:after,
-.ui-alt-icon .ui-icon-carat-d:after {
+.ui-alt-icon.ui-icon-caret-d:after,
+.ui-alt-icon .ui-icon-caret-d:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%2211.949%2C3.404%207%2C8.354%202.05%2C3.404%20-0.071%2C5.525%207%2C12.596%2014.07%2C5.525%20%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-alt-icon.ui-icon-carat-l:after,
-.ui-alt-icon .ui-icon-carat-l:after {
+.ui-alt-icon.ui-icon-caret-l:after,
+.ui-alt-icon .ui-icon-caret-l:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%2210.596%2C11.949%205.646%2C7%2010.596%2C2.05%208.475%2C-0.071%201.404%2C7%208.475%2C14.07%20%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-alt-icon.ui-icon-carat-r:after,
-.ui-alt-icon .ui-icon-carat-r:after {
+.ui-alt-icon.ui-icon-caret-r:after,
+.ui-alt-icon .ui-icon-caret-r:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%223.404%2C2.051%208.354%2C7%203.404%2C11.95%205.525%2C14.07%2012.596%2C7%205.525%2C-0.071%20%22%2F%3E%3C%2Fsvg%3E");
 }
-.ui-alt-icon.ui-icon-carat-u:after,
-.ui-alt-icon .ui-icon-carat-u:after {
+.ui-alt-icon.ui-icon-caret-u:after,
+.ui-alt-icon .ui-icon-caret-u:after {
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20points%3D%222.051%2C10.596%207%2C5.646%2011.95%2C10.596%2014.07%2C8.475%207%2C1.404%20-0.071%2C8.475%20%22%2F%3E%3C%2Fsvg%3E");
 }
 .ui-alt-icon.ui-icon-check:after,
@@ -416,17 +416,17 @@ html .ui-alt-icon .ui-btn.ui-checkbox-on:after {
 .ui-nosvg .ui-icon-camera:after {
 	background-image: url(images/icons-png/camera-white.png);
 }
-.ui-nosvg .ui-icon-carat-d:after {
-	background-image: url(images/icons-png/carat-d-white.png);
+.ui-nosvg .ui-icon-caret-d:after {
+	background-image: url(images/icons-png/caret-d-white.png);
 }
-.ui-nosvg .ui-icon-carat-l:after {
-	background-image: url(images/icons-png/carat-l-white.png);
+.ui-nosvg .ui-icon-caret-l:after {
+	background-image: url(images/icons-png/caret-l-white.png);
 }
-.ui-nosvg .ui-icon-carat-r:after {
-	background-image: url(images/icons-png/carat-r-white.png);
+.ui-nosvg .ui-icon-caret-r:after {
+	background-image: url(images/icons-png/caret-r-white.png);
 }
-.ui-nosvg .ui-icon-carat-u:after {
-	background-image: url(images/icons-png/carat-u-white.png);
+.ui-nosvg .ui-icon-caret-u:after {
+	background-image: url(images/icons-png/caret-u-white.png);
 }
 .ui-nosvg .ui-icon-check:after,
 html.ui-nosvg .ui-btn.ui-checkbox-on:after {
@@ -584,21 +584,21 @@ html.ui-nosvg .ui-btn.ui-checkbox-on:after {
 .ui-nosvg .ui-alt-icon .ui-icon-camera:after {
 	background-image: url(images/icons-png/camera-black.png);
 }
-.ui-nosvg .ui-alt-icon.ui-icon-carat-d:after,
-.ui-nosvg .ui-alt-icon .ui-icon-carat-d:after {
-	background-image: url(images/icons-png/carat-d-black.png);
+.ui-nosvg .ui-alt-icon.ui-icon-caret-d:after,
+.ui-nosvg .ui-alt-icon .ui-icon-caret-d:after {
+	background-image: url(images/icons-png/caret-d-black.png);
 }
-.ui-nosvg .ui-alt-icon.ui-icon-carat-l:after,
-.ui-nosvg .ui-alt-icon .ui-icon-carat-l:after {
-	background-image: url(images/icons-png/carat-l-black.png);
+.ui-nosvg .ui-alt-icon.ui-icon-caret-l:after,
+.ui-nosvg .ui-alt-icon .ui-icon-caret-l:after {
+	background-image: url(images/icons-png/caret-l-black.png);
 }
-.ui-nosvg .ui-alt-icon.ui-icon-carat-r:after,
-.ui-nosvg .ui-alt-icon .ui-icon-carat-r:after {
-	background-image: url(images/icons-png/carat-r-black.png);
+.ui-nosvg .ui-alt-icon.ui-icon-caret-r:after,
+.ui-nosvg .ui-alt-icon .ui-icon-caret-r:after {
+	background-image: url(images/icons-png/caret-r-black.png);
 }
-.ui-nosvg .ui-alt-icon.ui-icon-carat-u:after,
-.ui-nosvg .ui-alt-icon .ui-icon-carat-u:after {
-	background-image: url(images/icons-png/carat-u-black.png);
+.ui-nosvg .ui-alt-icon.ui-icon-caret-u:after,
+.ui-nosvg .ui-alt-icon .ui-icon-caret-u:after {
+	background-image: url(images/icons-png/caret-u-black.png);
 }
 .ui-nosvg .ui-alt-icon.ui-icon-check:after,
 .ui-nosvg .ui-alt-icon .ui-icon-check:after,
@@ -917,7 +917,7 @@ html .ui-alt-icon .ui-radio-off:after {
 	width: 8px;
 	height: 8px;
 	border-width: 5px;
-	border-style: solid;
+	border-style: solid; 
 }
 .ui-alt-icon.ui-btn.ui-radio-on:after,
 .ui-alt-icon .ui-btn.ui-radio-on:after {
@@ -1295,6 +1295,8 @@ button[disabled],
 .ui-mobile,
 .ui-mobile body {
 	height: 99.9%;
+    margin: 0;
+    padding: 0;
 }
 .ui-mobile fieldset,
 .ui-page {
@@ -1559,7 +1561,7 @@ div.ui-mobile-viewport {
 .ui-mini .ui-btn-icon-notext,
 .ui-header .ui-btn-icon-notext,
 .ui-footer .ui-btn-icon-notext {
-	font-size: 16px;
+	font-size: 16px;	
 	padding: 0;
 }
 .ui-btn-inline {
@@ -2255,11 +2257,11 @@ button.ui-btn-icon-notext,
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateX(0); /* Needed to work around an iOS 3.1 bug that causes listview thumbs to disappear when -webkit-visibility:hidden is used. */
 	-webkit-transform-origin: 0;
-
+	
 	-moz-backface-visibility: hidden;
 	-moz-transform: translateX(0);
 	-moz-transform-origin: 0;
-
+	
 	backface-visibility :hidden;
 	transform: translateX(0);
 	transform-origin: 0;
@@ -2282,7 +2284,7 @@ button.ui-btn-icon-notext,
 	-moz-animation-duration: 250ms;
 	animation-name: flipintoright;
 	animation-duration: 250ms;
-
+	
 }
 .turn.out.reverse {
 	-webkit-transform: rotateY(90deg) scale(.9);
@@ -2349,17 +2351,17 @@ button.ui-btn-icon-notext,
 .flow {
 	-webkit-transform-origin: 50% 30%;
 	-webkit-box-shadow: 0 0 20px rgba(0,0,0,.4);
-	-moz-transform-origin: 50% 30%;
+	-moz-transform-origin: 50% 30%;	
 	-moz-box-shadow: 0 0 20px rgba(0,0,0,.4);
-	transform-origin: 50% 30%;
+	transform-origin: 50% 30%;	
 	box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .ui-dialog.flow {
 	-webkit-transform-origin: none;
 	-webkit-box-shadow: none;
-	-moz-transform-origin: none;
+	-moz-transform-origin: none;	
 	-moz-box-shadow: none;
-	transform-origin: none;
+	transform-origin: none;	
 	box-shadow: none;
 }
 .flow.out {
@@ -2532,12 +2534,25 @@ button.ui-btn-icon-notext,
 	}
 }
 /* content configurations. */
-.ui-grid-a,
-.ui-grid-b,
-.ui-grid-c,
-.ui-grid-d,
-.ui-grid-solo {
-	overflow: hidden;
+.ui-grid-a:before,
+.ui-grid-b:before,
+.ui-grid-c:before,
+.ui-grid-d:before,
+.ui-grid-solo:before,
+.ui-grid-a:after,
+.ui-grid-b:after,
+.ui-grid-c:after,
+.ui-grid-d:after,
+.ui-grid-solo:after {
+	content: "";
+	display: table;
+}
+.ui-grid-a:after,
+.ui-grid-b:after,
+.ui-grid-c:after,
+.ui-grid-d:after,
+.ui-grid-solo:after {
+	clear: both;
 }
 .ui-block-a,
 .ui-block-b,
@@ -2619,7 +2634,7 @@ li.ui-block-e {
 }
 .ui-grid-solo > .ui-block-a {
 	width: 100%;
-	float: none;
+	float: none; 
 }
 /* preset breakpoint to switch to stacked grid styles below 35em (560px) */
 @media (max-width: 35em) {
@@ -2628,8 +2643,8 @@ li.ui-block-e {
 	.ui-responsive > .ui-block-c,
 	.ui-responsive > .ui-block-d,
 	.ui-responsive > .ui-block-e {
-		width: 100%;
-		float: none;
+		width: 100%; 
+		float: none; 
 	}
 }
 /* fixed page header & footer configuration */
@@ -2700,7 +2715,7 @@ li.ui-block-e {
 	clip: rect(1px,1px,1px,1px);
 }
 .ui-header-fixed .ui-btn,
-.ui-footer-fixed .ui-btn {
+.ui-footer-fixed .ui-btn { 
 	z-index: 10;
 }
 /* workarounds for other widgets */
@@ -2804,7 +2819,7 @@ li.ui-block-e {
 	border: 0;
 	outline: 0;
 	-webkit-border-radius: inherit;
-	border-radius: inherit;
+	border-radius: inherit;	
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	cursor: pointer;
@@ -2866,7 +2881,7 @@ li.ui-block-e {
 }
 .ui-collapsible-content {
 	display: block;
-	margin: 0;
+	margin: 0;	
 	padding: .5em 1em;
 }
 .ui-collapsible-themed-content .ui-collapsible-content {
@@ -2892,27 +2907,27 @@ li.ui-block-e {
 }
 .ui-collapsible-heading,
 .ui-collapsible-heading > .ui-btn {
-	-webkit-border-radius: inherit;
-	border-radius: inherit;
+	-webkit-border-radius: inherit;	
+	border-radius: inherit;	
 }
 .ui-collapsible-set .ui-collapsible.ui-first-child {
-	-webkit-border-top-right-radius: inherit;
+	-webkit-border-top-right-radius: inherit;	
 	border-top-right-radius: inherit;
-	-webkit-border-top-left-radius: inherit;
-	border-top-left-radius: inherit;
+	-webkit-border-top-left-radius: inherit;	
+	border-top-left-radius: inherit;		
 }
 .ui-collapsible-content,
 .ui-collapsible-set .ui-collapsible.ui-last-child {
-	-webkit-border-bottom-right-radius: inherit;
+	-webkit-border-bottom-right-radius: inherit;	
 	border-bottom-right-radius: inherit;
-	-webkit-border-bottom-left-radius: inherit;
-	border-bottom-left-radius: inherit;
+	-webkit-border-bottom-left-radius: inherit;	
+	border-bottom-left-radius: inherit;		
 }
 .ui-collapsible-themed-content:not(.ui-collapsible-collapsed) > .ui-collapsible-heading {
-	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-right-radius: 0;	
 	border-bottom-right-radius: 0;
-	-webkit-border-bottom-left-radius: 0;
-	border-bottom-left-radius: 0;
+	-webkit-border-bottom-left-radius: 0;	
+	border-bottom-left-radius: 0;		
 }
 .ui-collapsible-set .ui-collapsible {
 	margin: -1px -1em 0;
@@ -3062,23 +3077,23 @@ fieldset.ui-controlgroup {
 	position: relative;
 	top: -1em;
 }
-.ui-dialog-contain > .ui-header,
-.ui-dialog-contain > .ui-content,
-.ui-dialog-contain > .ui-footer {
+.ui-dialog-contain > .ui-header, 
+.ui-dialog-contain > .ui-content, 
+.ui-dialog-contain > .ui-footer { 
 	display: block;
-	position: relative;
+	position: relative; 
 	width: auto;
 	margin: 0;
 }
 .ui-dialog-contain > .ui-header {
 	overflow: hidden;
-	z-index: 10;
+	z-index: 10; 
 	padding: 0;
 	border-top-width: 0;
 }
 .ui-dialog-contain > .ui-footer {
-	z-index: 10;
-	padding: 0 1em;
+	z-index: 10; 
+	padding: 0 1em; 
 	border-bottom-width: 0;
 }
 .ui-popup-open .ui-header-fixed,
@@ -3200,7 +3215,7 @@ fieldset.ui-controlgroup {
 }
 .ui-popup > .ui-btn-left,
 .ui-popup > .ui-btn-right {
-	position: absolute;
+	position: absolute; 
 	top: -11px;
 	margin: 0;
 	z-index: 1101;
@@ -3277,7 +3292,7 @@ fieldset.ui-controlgroup {
 /**
  * For each side, the arrow is twice the desired size and its corner is aligned
  * with the edge of the container:
- *
+ *                                           
  *           /\         /\                +----+       /\
  *          /  \       /  \               | /\ |top   /  \
  *      +----+  \     /  +----+       +-->|/  \|     /    \
@@ -3326,7 +3341,7 @@ fieldset.ui-controlgroup {
     margin-left: -5.857864376269049px;
     margin-top: -4.142135623730951px;
 }
-
+ 
 .ui-popup-arrow-container.ui-popup-arrow-l.ie .ui-popup-arrow {
     margin-left: -7.0710678118654755px;
     margin-top: -5.857864376269049px;
@@ -3444,7 +3459,7 @@ fieldset.ui-controlgroup {
 	max-height: 100%;
 	outline: 0;
 	-webkit-border-radius: inherit;
-	border-radius: inherit;
+	border-radius: inherit;	
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	cursor: pointer;
@@ -3461,7 +3476,7 @@ fieldset.ui-controlgroup {
 .ui-select .ui-state-disabled select {
 	display: none;
 }
-/* Because we add all classes of the select and option elements to the span... */
+/* Because we add all classes of the select and option elements to the span... */ 
 .ui-select span.ui-state-disabled {
 	filter: Alpha(Opacity=100);
 	opacity: 1;
@@ -3484,6 +3499,10 @@ fieldset.ui-controlgroup {
 }
 .ui-select .ui-btn-icon-right .ui-li-count {
 	right: 3.2em;
+}
+/* Count indicator position must be different for mini version. */
+.ui-select.ui-mini .ui-btn-icon-right .ui-li-count {
+	right: 2.5em;
 }
 /* We set the rules for the span as well to fix an issue on Chrome with text-overflow ellipsis for the button in combination with text-align center. */
 .ui-select .ui-btn > span:not(.ui-li-count) {
@@ -3528,7 +3547,7 @@ fieldset.ui-controlgroup {
 .ui-selectmenu .ui-selectmenu-list {
 	margin: 0;
 	-webkit-border-radius: inherit;
-	border-radius: inherit;
+	border-radius: inherit;	
 }
 .ui-header:not(.ui-screen-hidden) + .ui-selectmenu-list {
 	-webkit-border-top-right-radius: 0;
@@ -3547,6 +3566,10 @@ fieldset.ui-controlgroup {
 }
 .ui-selectmenu .ui-selectmenu-placeholder {
 	display: none;
+}
+/* This is necessary because multi inline select menu hides if width exceeds device width. */
+.ui-select.ui-btn-inline {
+	max-width: 100% ;
 }
 .ui-listview,
 .ui-listview > li {
@@ -3614,7 +3637,7 @@ fieldset.ui-controlgroup {
 }
 .ui-listview > li.ui-first-child,
 .ui-listview > li.ui-first-child > a.ui-btn {
-	-webkit-border-top-right-radius: inherit;
+	-webkit-border-top-right-radius: inherit;	
 	border-top-right-radius: inherit;
 	-webkit-border-top-left-radius: inherit;
 	border-top-left-radius: inherit;
@@ -3633,7 +3656,7 @@ fieldset.ui-controlgroup {
 	border-bottom-right-radius: 0;
 }
 .ui-listview > li.ui-first-child > a.ui-btn + a.ui-btn {
-	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-left-radius: 0;	
 	border-top-left-radius: 0;
 	-webkit-border-top-right-radius: inherit;
 	border-top-right-radius: inherit;
@@ -3646,15 +3669,15 @@ fieldset.ui-controlgroup {
 }
 .ui-listview > li.ui-first-child img:first-child:not(.ui-li-icon) {
 	-webkit-border-top-left-radius: inherit;
-	border-top-left-radius: inherit;
+	border-top-left-radius: inherit;	
 }
 .ui-listview > li.ui-last-child img:first-child:not(.ui-li-icon) {
 	-webkit-border-bottom-left-radius: inherit;
-	border-bottom-left-radius: inherit;
+	border-bottom-left-radius: inherit;	
 }
 .ui-collapsible-content > .ui-listview:not(.ui-listview-inset) {
 	-webkit-border-radius: inherit;
-	border-radius: inherit;
+	border-radius: inherit;	
 }
 .ui-listview > .ui-li-static {
 	padding: .7em 1em;
@@ -4088,9 +4111,6 @@ div.ui-rangeslider label {
 	border-width: 1px;
 	border-style: solid;
 }
-.ui-mini {
-	margin: .446em;
-}
 .ui-input-text input,
 .ui-input-search input,
 textarea.ui-input-text {
@@ -4197,9 +4217,12 @@ for Android 4.1 */
 .ui-input-text input[type=number]::-webkit-outer-spin-button {
 	margin: 0;
 }
-/* Resolves issue #5756: Textinput in IE10 has a default clear button */
-.ui-input-text input::-ms-clear,
-.ui-input-search input::-ms-clear {
+/* Resolves issue #8001: Default clear button in date input type*/
+.ui-textinput-hide-clear::-ms-clear{
+	display: none;
+}
+/* This needs to be its own rule because browsers have to drop the whole rule if they encounter an invalid pseudo element*/
+.ui-textinput-hide-clear::-webkit-clear-button{
 	display: none;
 }
 .ui-input-text input:focus,
@@ -4283,7 +4306,7 @@ textarea.ui-input-text.ui-textinput-autogrow {
 	padding: 1px;
 	text-indent: 1em; /* Override this to center text if you use a label other than "off" */
 }
-/* Override field container CSS to prevent the flipswitch from becomming full width */
+/* Override field container CSS to prevent the flipswitch from becoming full width */
 html .ui-field-contain > label + .ui-flipswitch,
 html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 	display: inline-block;
@@ -4413,35 +4436,35 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
  Styles for the table columntoggle mode
 */
 .ui-table-reflow td .ui-table-cell-label,
-.ui-table-reflow th .ui-table-cell-label {
+.ui-table-reflow th .ui-table-cell-label { 
 	display: none;
 }
-/* Mobile first styles: Begin with the stacked presentation at narrow widths */
+/* Mobile first styles: Begin with the stacked presentation at narrow widths */ 
 @media only all {
-	/* Hide the table headers */
-	.ui-table-reflow thead td,
+	/* Hide the table headers */ 
+	.ui-table-reflow thead td, 
 	.ui-table-reflow thead th {
 		display: none;
 	}
-	/* Show the table cells as a block level element */
+	/* Show the table cells as a block level element */ 
 	.ui-table-reflow td,
-	.ui-table-reflow th {
+	.ui-table-reflow th { 
 		text-align: left;
 		display: block;
 	}
-	/* Add a fair amount of top margin to visually separate each row when stacked */
+	/* Add a fair amount of top margin to visually separate each row when stacked */  
 	.ui-table-reflow tbody th {
 		margin-top: 3em;
 	}
-	/* Make the label elements a percentage width */
+	/* Make the label elements a percentage width */ 
 	.ui-table-reflow td .ui-table-cell-label,
-	.ui-table-reflow th .ui-table-cell-label {
-		padding: .4em;
-		min-width: 30%;
+	.ui-table-reflow th .ui-table-cell-label { 
+		padding: .4em; 
+		min-width: 30%; 
 		display: inline-block;
 		margin: -.4em 1em -.4em -.4em;
 	}
-	/* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */
+	/* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */ 
 	.ui-table-reflow th .ui-table-cell-label-top,
 	.ui-table-reflow td .ui-table-cell-label-top {
 		display: block;
@@ -4452,9 +4475,9 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 		font-weight: normal;
 	}
 }
-/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */
-@media ( min-width: 35em ) {
-	/* Show the table header rows */
+/* Breakpoint to show as a standard table at 560px (35em x 16px) or wider */ 
+@media screen and ( min-width: 35em ), print {
+	/* Show the table header rows */ 
 	.ui-table-reflow.ui-responsive td,
 	.ui-table-reflow.ui-responsive th,
 	.ui-table-reflow.ui-responsive tbody th,
@@ -4464,15 +4487,15 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 		display: table-cell;
 		margin: 0;
 	}
-	/* Hide the labels in each cell */
+	/* Hide the labels in each cell */ 
 	.ui-table-reflow.ui-responsive td .ui-table-cell-label,
-	.ui-table-reflow.ui-responsive th .ui-table-cell-label {
+	.ui-table-reflow.ui-responsive th .ui-table-cell-label { 
 		display: none;
 	}
 }
-/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */
-/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/
-@media ( max-width: 35em ) {
+/* Hack to make IE9 and WP7.5 treat cells like block level elements, scoped to ui-responsive class */ 
+/* Applied in a max-width media query up to the table layout breakpoint so we don't need to negate this*/ 
+@media screen and ( max-width: 35em ) {
 	.ui-table-reflow.ui-responsive td,
 	.ui-table-reflow.ui-responsive th {
 		width: 100%;
@@ -4703,7 +4726,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 		margin-left: 17em;
 	}
 	.ui-responsive-panel .ui-panel-page-content-open {
-		width: auto;
+		width: auto;	
 	}
 	.ui-responsive-panel .ui-panel-dismiss-display-push,
 	.ui-responsive-panel.ui-page-active ~ .ui-panel-dismiss-display-push {
