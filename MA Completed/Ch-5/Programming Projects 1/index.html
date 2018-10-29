@@ -144,7 +144,7 @@
         data-iconpos="left" data-inline="true">Home</a>
         <a href="#pageAbout" data-role="button" data-icon="info"
         data-iconpos="right" data-inline="true">Info</a>
-        <h1>Thyroid Cancer Aide</h1>
+        <h1>Boiler Monitor</h1>
       </div>
       <div data-role="content">
         <div data-role="controlgroup">
@@ -202,29 +202,21 @@
               id="datExamDate" value="">
             </div>
             <div data-role="fieldcontain">
-              <label for="txtTSH"><abbr title="Thyroid-stimulating hormone">TSH (mIU/L): </abbr>
+              <label for="txtBoilerTemp"><abbr title="Boiler Temperature">Boiler Temperature (F&deg): </abbr>
               </label>
-              <input type="number" step="0.01" placeholder="0" name="txtTSH"
-              data-mini="false" id="txtTSH" value="">
+              <input type="range"  placeholder="0" min="0" max="250" name="txtBoilerTemp"
+              data-mini="false" id="txtBoilerTemp" value="">
             </div>
             <div data-role="fieldcontain">
-              <label for="txtThyroglobulin">Thyroglobulin (µg/L)[Optional]: </label>
-              <input type="number" step="0.01" placeholder="0" name="txtThyroglobulin"
-              data-mini="false" id="txtThyroglobulin"
-              value="">
-            </div>
-            <div data-role="fieldcontain">
-              <label for="txtSynthroidDose"><abbr title="Synthroid or Eltroxin">Synthroid*(µg): </abbr>
-              </label>
-              <input type="number" step="0.01" placeholder="0" name="txtSynthroidDose"
-              data-mini="false" id="txtSynthroidDose"
+              <label for="txtBoilerPressure">Boiler Pressure (PSI): </label>
+              <input type="range" placeholder="0" min="0" max="60"  name="txtBoilerPressure"
+              data-mini="false" id="txtBoilerPressure"
               value="">
             </div>
           </div>
           <input type="submit" id="btnSubmitRecord" value="">
         </form>
       </div>
-      <p>&nbsp;&nbsp;100 microgram = .0001 gram</p>
     </div>
 
 
@@ -239,7 +231,7 @@
       </div>
       <div class="panel panel-success">
         <div class="panel-heading">
-          <h3 class="panel-title">TSH vs Date</h3>
+          <h3 class="panel-title">Temperature and Pressure vs Date</h3>
         </div>
         <div class="panel-body">
           <canvas id="GraphCanvas" width="500" height="500" style="border:1px solid #000000;">
