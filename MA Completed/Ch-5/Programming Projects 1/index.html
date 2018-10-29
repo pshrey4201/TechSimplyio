@@ -103,9 +103,9 @@
             required>
           </div>
           <div data-role="fieldcontain">
-            <label for="datBirthdate">Birthdate: </label>
-            <input type="date" name="datBirthdate" data-mini="false"
-            id="datBirthdate" value="" required>
+            <label for="purchaseDate">Date of Purchase: </label>
+            <input type="date" name="purchaseDate" data-mini="false"
+            id="purchaseDate" value="" required>
           </div>
           <div data-role="fieldcontain">
             <label for="changePassword">Edit Password: </label>
@@ -114,42 +114,22 @@
             required>
           </div>
           <div data-role="fieldcontain">
-            <label for="txtHealthCardNumber">Health Card Number: </label>
-            <input type="text" placeholder="Health Card Number"
-            name="txtHealthCardNumber" data-mini="false"
-            id="txtHealthCardNumber" value="" required>
+            <label for="boilerID">Boiler ID: </label>
+            <input type="text" placeholder="Boiler ID"
+            name="boilerID" data-mini="false"
+            id="boilerID" value="" required>
           </div>
           <div data-role="fieldcontain">
-            <label for="slcCancerType" class="select">Cancer Type: </label>
-            <select name="slcCancerType" id="slcCancerType" data-mini="false"
-            data-native-menu="false" required>
-              <option>Select Cancer Type</option>
-              <option value="Papillary">Papillary</option>
-              <option value="Follicular">Follicular</option>
-              <option value="Medullary">Medullary</option>
-              <option value="Anaplastic">Anaplastic</option>
-            </select>
+            <label for="boilerPressure">Boiler Pressure in PSI: </label>
+            <input type="range" placeholder="0" min='0' max='60'
+            name="boilerPressure" data-mini="false"
+            id="boilerPressure" value="" required>
           </div>
           <div data-role="fieldcontain">
-            <label for="slcCancerStage" class="select">Cancer Stage: </label>
-            <select name="slcCancerStage" id="slcCancerStage" data-mini="false"
-            data-native-menu="false" required>
-              <option>Select Cancer Stage</option>
-              <option value="StageOne">Stage I</option>
-              <option value="StageTwo">Stage II</option>
-              <option value="StageThree">Stage III</option>
-              <option value="StageFour">Stage IV</option>
-            </select>
-          </div>
-          <div data-role="fieldcontain">
-            <label for="slcTSHRange" class="select">Target TSH Range: </label>
-            <select name="slcTSHRange" id="slcTSHRange" data-mini="false"
-            data-native-menu="false" required>
-              <option>Select TSH Range</option>
-              <option value="StageA">A: 0.01-0.1 mIU/L</option>
-              <option value="StageB">B: 0.1-0.5 mIU/L</option>
-              <option value="StageC">C: 0.35-2.0 mIU/L</option>
-            </select>
+            <label for="boilerTemp">Boiler Temperature In F&deg: </label>
+            <input type="range" placeholder="0" min='0' max='250'
+            name="boilerTemp" data-mini="false"
+            id="boilerTemp" value="" required>
           </div>
           <input type="submit" id="btnUserUpdate" data-icon="check"
           data-iconpos="left" value="Update" data-inline="true">
@@ -160,8 +140,8 @@
     <!-- Menu page -->
     <div data-role="page" id="pageMenu" data-theme="b">
       <div data-role="header">
-        <a href="#pageMenu" data-role="button" data-icon="bars"
-        data-iconpos="left" data-inline="true">Menu</a>
+        <a href="#pageHome" data-role="button" data-icon="bars"
+        data-iconpos="left" data-inline="true">Home</a>
         <a href="#pageAbout" data-role="button" data-icon="info"
         data-iconpos="right" data-inline="true">Info</a>
         <h1>Thyroid Cancer Aide</h1>
